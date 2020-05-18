@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+body {
+  background-color: green;
+}
+h1 {
+  font-size: 55px;
+  text-decoration: dashed;
+
+}
