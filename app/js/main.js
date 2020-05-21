@@ -9,9 +9,7 @@ $(function(){
     dots: true,
     arrows: false,
     slidesToShow: 4,
-    slidesToScroll: 4,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    slidesToScroll: 4
 
   });
 
