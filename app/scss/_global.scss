@@ -15,6 +15,7 @@ a {
   text-decoration: none;
   color: $text;
 }
+
 ul,
 li {
   margin: 0;
@@ -26,10 +27,12 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: $text;
-  font-weight: 400;
+  font-weight: 400; 
 }
 
 .wrapper {
+  position: relative;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -100,5 +103,17 @@ body {
     a {
       color: #b0beb5;
     }
+  }
+}
+.angle-right{
+  position: relative;
+  padding-left: 15px;
+  &::before {
+    content: "\f105";
+    position: absolute;
+    color: $green;
+    font-family: 'icomoon';
+    left: 0;
+    font-size: 14px;
   }
 }
