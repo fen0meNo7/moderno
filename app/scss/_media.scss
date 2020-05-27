@@ -73,6 +73,10 @@
   }
   .circle__menu {
     right: auto;
+    &.ron {
+      left: -60px;
+    }
+
   }
 }
 
@@ -165,13 +169,17 @@
   .circle__menu {
     left: -45px;
   }
+  .header__btn {
+    left: 10px;
+  }
 }
 
 @media (max-width: 360px) {
   .user {
-    margin-left: 10px;
     margin-right: 0;
-
+  }
+  .basket {
+    margin-right: 10px;
   }
   .header__logo {
     margin-left: 50px;
