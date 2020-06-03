@@ -1632,8 +1632,7 @@ button.icon-unsorted {
   margin-bottom: 150px;
 }
 .page-404__head,
-.about__head,
-.contact__head {
+.about__head {
   @include f500;
   font-size: 24px;
   color: #444444;
@@ -1795,7 +1794,7 @@ button.icon-unsorted {
     background-color: $green;
     color: #fff;
     font-size: 16px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     text-align: center;
     display: block;
     @include f700;
@@ -1818,7 +1817,121 @@ button.icon-unsorted {
   display: flex;
   justify-content: space-between;
 }
+.contact__head {
+  @include f500;
+  font-size: 24px;
+  color: #444444;
+  padding: 23px 27px;
+  border-bottom: 1px solid #dcdcdc;
+}
 
 // end contacts
+
+// start settings
+.settings {
+  padding-bottom: 100px;
+}
+.product-one__tabs.settings__tabs {
+  display: flex;
+  .tabs {
+    max-width: 270px;
+    width: 100%;
+    margin-right: 30px;
+    border: 1px solid #dedede;
+    border-bottom: none;
+    text-align: left;
+    display: block;
+    height: 100%;
+
+    span {
+      display: block;
+      background-color: #fff;
+      border-bottom: 1px solid #dedede;
+      padding: 17px 17px 17px 50px;
+      color: #707070;
+      font-size: 14px;
+      @include f500;
+      &.active {
+        border-bottom: 1px solid $green;
+        color: #37474f;
+        &::before {
+          color: $green;
+        }
+      }
+      &::before {
+        left: 24px;
+        color: #444444;
+      }
+    }
+  }
+  .tabs .tab + .tab {
+    border-left: none;
+  }
+  .tab_content {
+    width: 100%;
+  }
+}
+.page-box {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  min-height: 100%;
+}
+.page-box__title {
+  border-bottom: 1px solid #dedede;
+  padding: 18px 34px;
+  @include f500;
+  color: $bg;
+  font-size: 24px;
+}
+.tab_content {
+  width: 100%;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.page-box__content {
+  padding: 30px 35px 80px;
+  button {
+    border: none;
+    background-color: $green;
+    color: #fff;
+    font-size: 15px;
+    @include f500;
+    padding: 11px;
+    text-align: center;
+    width: 108px;
+    margin-left: 260px;
+    display: block;
+  }
+}
+.settings__line {
+  margin-bottom: 21px;
+  display: flex;
+  align-items: center;
+  label {
+    width: 260px;
+    color: #444444;
+  }
+  input {
+    max-width: 540px;
+    width: 100%;
+    height: 40px;
+    color: #000;
+    background-color: #f9f9f9;
+    border: 1px solid #dedede;
+    padding: 0px 10px;
+  }
+  select {
+    max-width: 540px;
+    width: 100%;
+    height: 40px;
+    color: #000;
+    background-color: #f9f9f9;
+    border: 1px solid #dedede;
+    padding: 0px 10px;
+  }
+}
+
+// end settings
 
 @import "media";
